@@ -28,6 +28,16 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   height: 50px;
 }
 
+.menu__logo {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #303030;
+  font-weight: 400;
+}
+
+.menu__logo2 {
+  color: #9401b3;
+}
+
 .menu__item a {
   color: #303030;
   font-family: "Source Sans Pro", sans-serif;

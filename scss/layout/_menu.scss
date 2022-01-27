@@ -5,6 +5,16 @@
 
 .menu{
     height: 50px;
+
+    &__logo{
+        font-family: $sans;
+        color: $-text-black;
+        font-weight: 400;
+    }
+
+    &__logo2{
+        color: $brand;
+    }
     
     &__item{
         
