@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/*==========================
+		com css end
+============================*/
+.menu {
+  height: 50px;
+}
+
+.menu__item a {
+  color: #303030;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  padding: 0 10px;
+  margin-left: 10px;
+  line-height: 50px;
+}
+
+.banner__img {
+  padding: 254px 0 117px;
+}
+/*# sourceMappingURL=style.css.map */
