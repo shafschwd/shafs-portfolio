@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   color: #9401b3;
 }
 
-.menu__item a {
+.menu__item {
   color: #303030;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
@@ -47,7 +47,41 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   line-height: 50px;
 }
 
+.banner__profile {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 282px;
+  bottom: 265px;
+  z-index: 1;
+}
+
+.banner__wrap h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 72px;
+  font-weight: 300;
+  color: #303030;
+}
+
+.banner__wrap h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  color: #303030;
+}
+
+.banner__wrap h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 3.77px;
+  background-color: #9401b3;
+  color: #303030;
+  padding-left: 30px;
+  position: relative;
+}
+
 .banner__img {
-  padding: 254px 0 117px;
+  padding: 115px 0 200px;
 }
 /*# sourceMappingURL=style.css.map */

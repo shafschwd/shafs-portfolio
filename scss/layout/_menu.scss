@@ -17,14 +17,11 @@
     }
     
     &__item{
-        
-        a{
-            color: $-text-black;
-            font-family: $sans;
-            font-size: 15px;
-            padding: 0 10px;
-            margin-left: 10px;
-            line-height: 50px;
-        }
+        color: $-text-black;
+        font-family: $sans;
+        font-size: 15px;
+        padding: 0 10px;
+        margin-left: 10px;
+        line-height: 50px;
     }
 }

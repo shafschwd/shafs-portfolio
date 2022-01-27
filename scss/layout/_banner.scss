@@ -3,6 +3,43 @@
 
 // banner start
 
-.banner__img{
-    padding: 254px 0 117px;
-}
+	.banner__profile {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		left: 282px;
+		bottom: 265px;
+		z-index: 1;
+	}
+
+	.banner__wrap {
+		h2 {
+			font-family: $sans;
+			font-size: 72px;
+			font-weight: 300;
+			color: $-text-black;
+		}
+
+		h1 {
+			font-family: $sans;
+			font-size: 60px;
+			font-weight: 900;
+			color: $-text-black;
+		}
+
+		h3 {
+			font-family: $sans;
+			font-size: 50px;
+			font-weight: 400;
+			letter-spacing: 3.77px;
+			background-color: $brand;
+			color: $-text-black;
+			padding-left: 30px;
+			position: relative;
+		}
+	}
+
+	.banner__img {
+		padding: 115px 0 200px;
+	}
+
