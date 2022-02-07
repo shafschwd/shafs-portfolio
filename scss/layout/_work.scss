@@ -1,0 +1,51 @@
+@import "../base/color";
+@import "../base/fonts";
+// work start
+
+#work {
+
+    .work-bg{
+        padding: 254px 0 117px;
+
+        // .com-overlay{
+        //     background-color: rgba(0, 0, 0, 0.527);
+        // }
+    
+
+        .com-heading{
+
+            h2{
+                font-family: $sans;
+                color: $brand;
+                font-size: 60px;
+                font-weight: 900;
+                padding-bottom: 35px;
+            }
+
+        }
+
+        .work--text{
+
+            h3{
+                font-family: $sans;
+                color: $black;
+                font-size: 24px;
+                font-weight: 900;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+
+            p{
+                font-family: $sans;
+                color: $-text-black;
+                font-size: 18px;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+    }
+
+
+}
+
+
