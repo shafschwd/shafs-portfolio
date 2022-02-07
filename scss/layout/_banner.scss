@@ -3,16 +3,20 @@
 
 // banner start
 
+	.banner__wrap{
+		padding-top: 80px;
+	}
+
 	.banner__profile {
 		position: absolute;
 		width: 300px;
 		height: 300px;
 		left: 282px;
-		bottom: 265px;
+		bottom: 210px;
 		z-index: 1;
 	}
 
-	.banner__wrap {
+	.banner__text {
 		h2 {
 			font-family: $sans;
 			font-size: 72px;
