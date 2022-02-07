@@ -21,6 +21,21 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   padding: 0;
 }
 
+.com-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.com-overlay::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 /*==========================
 		com css end
 ============================*/
@@ -86,6 +101,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 }
 
 .banner__img {
+  padding: 115px 0 200px;
+}
+
+.about-bg {
   padding: 115px 0 200px;
 }
 /*# sourceMappingURL=style.css.map */
