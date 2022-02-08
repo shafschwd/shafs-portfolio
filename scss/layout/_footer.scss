@@ -1,0 +1,22 @@
+#footer {
+	padding: 100px 0;
+	background: #141414;
+
+	.footer--text {
+		h6 {
+			font-family: $sans;
+			font-weight: 900;
+			color: $brand;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.footer--icon {
+		i {
+			font-size: 24px;
+			color: $brand;
+			margin: 30px;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+@import "../base/color";
+@import "../base/fonts";
+
+// my works start
+
+#my-works{
+    padding: 200px 0;
+    background: #2E2E2E;
+
+    .my-works--headings{
+
+        h2{
+            font-family: $sans;
+            font-weight: 900;
+            color: $white;
+            font-size: 60px;
+        }
+
+        h6{
+            font-family: $sans;
+            font-weight: 900;
+            color: $brand;
+            font-size: 24px;
+        }
+    }
+}

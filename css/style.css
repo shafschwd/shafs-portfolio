@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   bottom: 35px;
   width: 90px;
   height: 2px;
-  background: #5A5A5B;
+  background: #5a5a5b;
 }
 
 #work .work-bg .work--text h3 {
@@ -158,7 +158,85 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   margin-top: 50px;
 }
 
-#about-me .about-bg {
-  padding: 115px 0 200px;
+#about-me {
+  padding: 200px 0;
+}
+
+#about-me .about--main h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  color: #303030;
+  padding-bottom: 20px;
+}
+
+#about-me .about--main h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  position: relative;
+}
+
+#about-me .about--main h5::before {
+  position: absolute;
+  content: "";
+  left: -40px;
+  top: -7px;
+  width: 1230px;
+  height: 50px;
+  background: #9401B3;
+  z-index: -1;
+}
+
+#about-me .about--main p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #303030;
+  padding-top: 30px;
+}
+
+#about-me .about--main p span {
+  display: block;
+  padding-top: 30px;
+}
+
+#my-works {
+  padding: 200px 0;
+  background: #2E2E2E;
+}
+
+#my-works .my-works--headings h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  color: #FFFFFF;
+  font-size: 60px;
+}
+
+#my-works .my-works--headings h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  color: #9401B3;
+  font-size: 24px;
+}
+
+#footer {
+  padding: 100px 0;
+  background: #141414;
+}
+
+#footer .footer--text h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  color: #9401B3;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#footer .footer--icon i {
+  font-size: 24px;
+  color: #9401B3;
+  margin: 30px;
 }
 /*# sourceMappingURL=style.css.map */
