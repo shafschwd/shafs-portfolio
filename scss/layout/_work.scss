@@ -5,21 +5,29 @@
 #work {
 
     .work-bg{
-        padding: 254px 0 117px;
-
-        // .com-overlay{
-        //     background-color: rgba(0, 0, 0, 0.527);
-        // }
+        padding: 200px 0 117px;
     
 
-        .com-heading{
+        .work--heading{
 
             h2{
                 font-family: $sans;
                 color: $brand;
                 font-size: 60px;
                 font-weight: 900;
-                padding-bottom: 35px;
+                padding-bottom: 50px;
+                position: relative;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 35px;
+                    width: 90px;
+                    height: 2px;
+                    background: #5A5A5B;
+                }
             }
 
         }
@@ -28,7 +36,7 @@
 
             h3{
                 font-family: $sans;
-                color: $black;
+                color: $white;
                 font-size: 24px;
                 font-weight: 900;
                 text-align: center;
@@ -37,10 +45,21 @@
 
             p{
                 font-family: $sans;
-                color: $-text-black;
+                color: $white;
                 font-size: 18px;
                 font-weight: 400;
-                text-align: center;
+                text-align: justify;
+            }
+
+            a{
+                font-family: $sans;
+                font-size: 16px;
+                font-weight: 600;
+                color: $-text-black;
+                letter-spacing: 0.8px;
+                background-color: $brand;
+                width: 98px;
+                height: 22px;
             }
         }
     }
