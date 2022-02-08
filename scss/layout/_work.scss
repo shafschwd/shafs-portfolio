@@ -5,7 +5,7 @@
 #work {
 
     .work-bg{
-        padding: 200px 0 117px;
+        padding: 150px 0 117px;
     
 
         .work--heading{
@@ -47,19 +47,22 @@
                 font-family: $sans;
                 color: $white;
                 font-size: 18px;
-                font-weight: 400;
+                font-weight: 200;
                 text-align: justify;
             }
+        }
+
+        .work--btn{
 
             a{
                 font-family: $sans;
                 font-size: 16px;
                 font-weight: 600;
-                color: $-text-black;
+                color: $white;
                 letter-spacing: 0.8px;
                 background-color: $brand;
-                width: 98px;
-                height: 22px;
+                padding: 10px 20px;
+                margin-top: 50px;
             }
         }
     }

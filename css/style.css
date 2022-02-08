@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 }
 
 #work .work-bg {
-  padding: 200px 0 117px;
+  padding: 150px 0 117px;
 }
 
 #work .work-bg .work--heading h2 {
@@ -143,19 +143,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   font-family: "Source Sans Pro", sans-serif;
   color: #FFFFFF;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 200;
   text-align: justify;
 }
 
-#work .work-bg .work--text a {
+#work .work-bg .work--btn a {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #303030;
+  color: #FFFFFF;
   letter-spacing: 0.8px;
   background-color: #9401B3;
-  width: 98px;
-  height: 22px;
+  padding: 10px 20px;
+  margin-top: 50px;
 }
 
 #about-me .about-bg {
