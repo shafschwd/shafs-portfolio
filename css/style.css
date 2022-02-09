@@ -253,6 +253,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 #work .work-bg .work--btn .fancy:hover {
   color: white;
   background: #981bfe;
+  border: 2px solid #981bfe;
 }
 
 #work .work-bg .work--btn .fancy:hover::before {

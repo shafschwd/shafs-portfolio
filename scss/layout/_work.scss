@@ -133,6 +133,7 @@
 			.fancy:hover {
 				color: white;
 				background: $brand;
+				border: 2px solid $brand;
 			}
 
 			.fancy:hover::before {
