@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 }
 
 .menu__logo2 {
-  color: #9401B3;
+  color: #981bfe;
 }
 
 .menu__item {
@@ -61,6 +61,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   padding: 0 10px;
   margin-left: 10px;
   line-height: 50px;
+  text-transform: capitalize;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.menu__item:hover {
+  color: #981bfe;
 }
 
 .banner__wrap {
@@ -95,8 +102,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   font-size: 50px;
   font-weight: 400;
   letter-spacing: 3.77px;
-  background-color: #9401B3;
-  color: #303030;
+  background-color: #981bfe;
+  color: #FFFFFF;
   padding-left: 30px;
   position: relative;
 }
@@ -111,7 +118,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 
 #work .work-bg .work--heading h2 {
   font-family: "Source Sans Pro", sans-serif;
-  color: #9401B3;
+  color: #981bfe;
   font-size: 60px;
   font-weight: 900;
   padding-bottom: 50px;
@@ -147,15 +154,126 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   text-align: justify;
 }
 
-#work .work-bg .work--btn a {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #FFFFFF;
-  letter-spacing: 0.8px;
-  background-color: #9401B3;
-  padding: 10px 20px;
+#work .work-bg .work--btn {
   margin-top: 50px;
+  /* From cssbuttons.io */
+}
+
+#work .work-bg .work--btn .fancy {
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 13px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#work .work-bg .work--btn .fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: #FFFFFF;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: background 0.3s linear, width 0.3s linear;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+#work .work-bg .work--btn .fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#work .work-bg .work--btn .fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #e8e8e8;
+  -webkit-transition: width 0.5s ease-out, left 0.3s ease-out;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+#work .work-bg .work--btn .fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+#work .work-bg .work--btn .fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+#work .work-bg .work--btn .fancy:hover {
+  color: white;
+  background: #981bfe;
+}
+
+#work .work-bg .work--btn .fancy:hover::before {
+  width: 0.9375rem;
+  background: white;
+}
+
+#work .work-bg .work--btn .fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}
+
+#work .work-bg .work--btn .fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+#work .work-bg .work--btn .fancy:hover .bottom-key-1,
+#work .work-bg .work--btn .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
 }
 
 #about-me {
@@ -182,10 +300,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   position: absolute;
   content: "";
   left: -40px;
-  top: -7px;
+  top: -10px;
   width: 1230px;
   height: 50px;
-  background: #9401B3;
+  background: #981bfe;
   z-index: -1;
 }
 
@@ -217,7 +335,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 #my-works .my-works--headings h6 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 900;
-  color: #9401B3;
+  color: #981bfe;
   font-size: 24px;
 }
 
@@ -229,14 +347,20 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 #footer .footer--text h6 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 900;
-  color: #9401B3;
+  color: #981bfe;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
 #footer .footer--icon i {
   font-size: 24px;
-  color: #9401B3;
+  color: #981bfe;
   margin: 30px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#footer .footer--icon i:hover {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

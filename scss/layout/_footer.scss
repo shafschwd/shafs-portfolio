@@ -17,6 +17,11 @@
 			font-size: 24px;
 			color: $brand;
 			margin: 30px;
+			transition: all linear .3s;
+
+			&:hover{
+				color: $white;
+			}
 		}
 	}
 }

@@ -23,5 +23,11 @@
         padding: 0 10px;
         margin-left: 10px;
         line-height: 50px;
+        text-transform: capitalize;
+        transition: all linear .3s;
+
+        &:hover{
+            color: $brand;
+        }
     }
 }
