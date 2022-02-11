@@ -74,13 +74,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   padding-top: 80px;
 }
 
-.banner__profile {
-  position: absolute;
+.banner__img img {
   width: 300px;
-  height: 300px;
-  left: 282px;
-  bottom: 210px;
-  z-index: 1;
+  margin-left: 60px;
+  margin-top: -20px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
+          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
 
 .banner__text h2 {
@@ -100,15 +99,24 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 .banner__text h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 3.77px;
-  background-color: #981bfe;
   color: #FFFFFF;
-  padding-left: 30px;
   position: relative;
 }
 
-.banner__img {
+.banner__text h3::before {
+  position: absolute;
+  content: "";
+  right: 110px;
+  top: 6px;
+  width: 825px;
+  height: 51px;
+  background: #981bfe;
+  z-index: -1;
+}
+
+.banner__bg {
   padding: 115px 0 200px;
 }
 
@@ -302,7 +310,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   content: "";
   left: -40px;
   top: -10px;
-  width: 1230px;
+  width: 1221px;
   height: 50px;
   background: #981bfe;
   z-index: -1;
