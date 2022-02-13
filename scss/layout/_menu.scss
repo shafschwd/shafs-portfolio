@@ -3,31 +3,40 @@
 
 // menu css start
 
-.menu{
-    height: 50px;
+.menu {
+	height: 50px;
 
-    &__logo{
-        font-family: $sans;
-        color: $-text-black;
-        font-weight: 400;
-    }
+	&__logo {
+		font-family: $sans;
+		color: $-text-black;
+		font-weight: 400;
+	}
 
-    &__logo2{
-        color: $brand;
-    }
-    
-    &__item{
-        color: $-text-black;
-        font-family: $sans;
-        font-size: 15px;
-        padding: 0 10px;
-        margin-left: 10px;
-        line-height: 50px;
-        text-transform: capitalize;
-        transition: all linear .3s;
+	&__logo2 {
+		color: $brand;
+	}
 
-        &:hover{
-            color: $brand;
-        }
-    }
+	&__item {
+		color: $-text-black;
+		font-family: $sans;
+		font-size: 15px;
+		padding: 0 10px;
+		margin-left: 10px;
+		line-height: 50px;
+		text-transform: capitalize;
+		transition: all linear 0.3s;
+
+		&:hover {
+			color: $brand;
+		}
+	}
+}
+
+.menu_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+    background: hsla(273, 4%, 54%, 0.397);
 }
