@@ -12,5 +12,28 @@ $(function () {
 		}
 	});
 
-	// menu fix start
+	// type js
+	var typed = new Typed(".type-banner", {
+		strings: [
+			"END-DEV"
+		],
+		loop: true,
+		typeSpeed: 60,
+		backSpeed: 60,
+		startDelay: 400,
+		// showCursor: false,
+		cursorChar: '💻',
+	});
+	var typed = new Typed(".type-about", {
+		strings: [
+			"based out of BD"
+		],
+		loop: true,
+		typeSpeed: 40,
+		backSpeed: 40,
+		startDelay: 200,
+		showCursor: false,
+	});
+
+	AOS.init();
 });

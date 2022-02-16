@@ -163,6 +163,11 @@ ol {
   padding: 115px 0 200px;
 }
 
+.typed-cursor {
+  font-size: 50px;
+  color: red;
+}
+
 #work .work-bg {
   padding: 150px 0 117px;
 }
