@@ -138,11 +138,11 @@
 
 			.fancy:hover::before {
 				width: 0.9375rem;
-				background: white;
+				background: $-text-black;
 			}
 
 			.fancy:hover .text {
-				color: white;
+				color: $-text-black;
 				padding-left: 1.5em;
 			}
 

@@ -1,18 +1,20 @@
 @import "../base/color";
 @import "../base/fonts";
+@import "../components/workslider";
 
 // my works start
 
 #my-works{
     padding: 200px 0;
-    background: #2E2E2E;
+    // background: #2E2E2E;
+    overflow-x: hidden;
 
     .my-works--headings{
 
         h2{
             font-family: $sans;
             font-weight: 900;
-            color: $white;
+            color: $-text-black;
             font-size: 60px;
         }
 
@@ -21,6 +23,36 @@
             font-weight: 900;
             color: $brand;
             font-size: 24px;
+        }
+    }
+
+    .card {
+            
+        img{
+
+            &:hover + h4{
+                display: block;
+            }
+        }
+
+        
+
+        h4{
+            display: none;
+            font-family: $sans;
+            font-weight: 600;
+            color: $-text-black;
+            font-size: 2rem;
+            text-align: left;
+        }
+
+        p{
+            display: none;
+            font-family: $sans;
+            font-weight: 400;
+            color: $-text-black;
+            font-size: 1rem;
+            text-align: left;
         }
     }
 }
