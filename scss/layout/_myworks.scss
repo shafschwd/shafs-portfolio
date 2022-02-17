@@ -26,33 +26,36 @@
         }
     }
 
-    .card {
+    .crd-work {
             
         img{
 
-            &:hover + h4{
+            &:hover + .text-wraper{
                 display: block;
             }
         }
 
+        .text-wraper{
+
+            display: none;
+
+            h4{
+                font-family: $sans;
+                font-weight: 600;
+                color: $-text-black;
+                font-size: 2rem;
+                text-align: left;
+                text-transform: uppercase;
+            }
+    
+            p{
+                font-family: $sans;
+                font-weight: 400;
+                color: $-text-black;
+                font-size: 12px;
+                text-align: left;
+            }
+        }
         
-
-        h4{
-            display: none;
-            font-family: $sans;
-            font-weight: 600;
-            color: $-text-black;
-            font-size: 2rem;
-            text-align: left;
-        }
-
-        p{
-            display: none;
-            font-family: $sans;
-            font-weight: 400;
-            color: $-text-black;
-            font-size: 1rem;
-            text-align: left;
-        }
     }
 }
