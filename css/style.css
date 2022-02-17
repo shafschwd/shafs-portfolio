@@ -423,25 +423,28 @@ ol {
   font-size: 24px;
 }
 
-#my-works .card img:hover + h4 {
+#my-works .crd-work img:hover + .text-wraper {
   display: block;
 }
 
-#my-works .card h4 {
+#my-works .crd-work .text-wraper {
   display: none;
+}
+
+#my-works .crd-work .text-wraper h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   color: #303030;
   font-size: 2rem;
   text-align: left;
+  text-transform: uppercase;
 }
 
-#my-works .card p {
-  display: none;
+#my-works .crd-work .text-wraper p {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   color: #303030;
-  font-size: 1rem;
+  font-size: 12px;
   text-align: left;
 }
 
