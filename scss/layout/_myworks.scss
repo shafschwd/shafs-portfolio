@@ -26,36 +26,26 @@
         }
     }
 
-    .crd-work {
-            
-        img{
+    .work--crd{
+        position: relative;
+        border: 1px solid gray;
+        border-radius: 10px;
+        overflow: hidden;
 
-            &:hover + .text-wraper{
-                display: block;
-            }
+        &:hover .card-wrap{
+            top: 0;
         }
 
-        .text-wraper{
 
-            display: none;
 
-            h4{
-                font-family: $sans;
-                font-weight: 600;
-                color: $-text-black;
-                font-size: 2rem;
-                text-align: left;
-                text-transform: uppercase;
-            }
-    
-            p{
-                font-family: $sans;
-                font-weight: 400;
-                color: $-text-black;
-                font-size: 12px;
-                text-align: left;
-            }
+        .card-wrap{
+            position: absolute;
+            height: 100%;
+            background-color: #000000bb;
+            object-fit: contain;
+            text-align: left;
+            top: 130px;
+            transition: all linear .3s;
         }
-        
     }
 }

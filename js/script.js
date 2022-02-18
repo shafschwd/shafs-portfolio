@@ -36,10 +36,10 @@ $(function () {
 		// direction: "vertical",
 		// freeMode: true,
 		slidesPerView: 3,
-		// grid: {
-		// 	rows: 2,
-		// },
-		spaceBetween: 20,
+		grid: {
+			rows: 2,
+		},
+		spaceBetween: 30,
 		// pagination: {
 		// 	el: ".swiper-pagination",
 		// 	clickable: true,
