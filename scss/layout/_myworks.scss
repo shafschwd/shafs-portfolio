@@ -4,48 +4,103 @@
 
 // my works start
 
-#my-works{
-    padding: 200px 0;
-    // background: #2E2E2E;
-    overflow-x: hidden;
+#my-works {
+	padding: 200px 0;
+	// background: #2E2E2E;
+	overflow-x: hidden;
 
-    .my-works--headings{
+	.my-works--headings {
+		h2 {
+			font-family: $sans;
+			font-weight: 900;
+			color: $-text-black;
+			font-size: 60px;
+		}
 
-        h2{
-            font-family: $sans;
-            font-weight: 900;
-            color: $-text-black;
-            font-size: 60px;
-        }
+		h6 {
+			font-family: $sans;
+			font-weight: 900;
+			color: $brand;
+			font-size: 24px;
+		}
+	}
 
-        h6{
-            font-family: $sans;
-            font-weight: 900;
-            color: $brand;
-            font-size: 24px;
-        }
-    }
+	.work--crd {
+		position: relative;
+		border: 1px solid gray;
+		border-radius: 8px;
+		overflow: hidden;
 
-    .work--crd{
-        position: relative;
-        border: 1px solid gray;
-        border-radius: 10px;
-        overflow: hidden;
+		.card-wrap {
+			position: absolute;
+			border-radius: 8px;
+			height: 100%;
+			background-color: #000000bb;
+			object-fit: contain;
+			top: 188px;
+			// transition: all cubic-bezier(.68,-0.55,.27,1.55) .4s;
+			transition: all linear 0.3s;
+			padding: 15px;
 
-        &:hover .card-wrap{
-            top: 0;
-        }
+			&:hover {
+				top: 0;
+				transform: rotateY(360deg);
+			}
 
+			// &:focus {
+			//     top: 0;
+			//     transform: rotateY(360deg);
+			// }
 
+			// &:active {
+			//     top: 0;
+			//     transform: rotateY(360deg);
+			// }
 
-        .card-wrap{
-            position: absolute;
-            height: 100%;
-            background-color: #000000bb;
-            object-fit: contain;
-            text-align: left;
-            top: 130px;
-            transition: all linear .3s;
-        }
-    }
+			h4 {
+				font-size: 30px;
+				font-weight: 400;
+				font-family: $sans;
+				color: $white;
+				text-transform: uppercase;
+				text-align: left;
+				position: relative;
+				padding-bottom: 5px !important;
+
+				a {
+					margin-left: 173px;
+
+					&:hover i {
+						color: $brand;
+					}
+
+					i {
+						color: $white;
+						transition: all linear 0.3s;
+					}
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 300px;
+					height: 1px;
+					background: #f1f1f1;
+					bottom: -10px;
+					left: 50%;
+					transform: translateX(-50%);
+					margin: 10px 0;
+				}
+			}
+
+			p {
+				font-size: 12px;
+				font-weight: 400;
+				font-family: $sans;
+				color: $white;
+				text-align: left;
+				padding-top: 5px;
+			}
+		}
+	}
 }
