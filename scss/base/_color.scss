@@ -1,13 +1,13 @@
-$brand: #14FF47;
-$brand-dark: hsl(133, 100%, 40%);
+$brand: var(--brand-light);
+$brand-dark: var(--brand-dark);
 
 
-$-text-black: hsl(0, 0%, 19%);
-$-text-white: hsl(0, 25%, 90%);
+$-text-black: var(--text-black);
+$-text-white: var(--text-white);
 
 
-$white: #FFFFFF;
-$black: #000000;
+$white: var(--white);
+$black: var(--black);
 
 $ash-light: #2E2E2E;
 $ash-dark: #141414;

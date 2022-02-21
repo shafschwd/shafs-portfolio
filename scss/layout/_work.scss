@@ -31,7 +31,7 @@
 		.work--text {
 			h3 {
 				font-family: $sans;
-				color: $white;
+				color: $-text-white;
 				font-size: 24px;
 				font-weight: 900;
 				text-align: center;
@@ -40,7 +40,7 @@
 
 			p {
 				font-family: $sans;
-				color: $white;
+				color: $-text-white;
 				font-size: 18px;
 				font-weight: 200;
 				text-align: justify;
@@ -79,7 +79,7 @@
 				content: " ";
 				width: 1.5625rem;
 				height: 2px;
-				background: $white;
+				background: $-text-white;
 				top: 50%;
 				left: 1.5em;
 				position: absolute;
@@ -97,7 +97,7 @@
 				transition: all 0.3s ease-in-out;
 				text-transform: uppercase;
 				text-decoration: none;
-				color: $white;
+				color: $-text-white;
 			}
 
 			.fancy .top-key {

@@ -49,6 +49,44 @@ ol {
 	z-index: -1;
 }
 
+:root {
+	--brand: hsl(133, 100%, 54%);
+	--brand-light: hsl(133, 100%, 54%);
+	--brand-dark: hsl(133, 100%, 40%);
+	--text-black: hsl(0, 0%, 19%);
+	--text-white: hsl(0, 25%, 90%);
+	--black: #000000;
+	--white: #ffffff;
+	--body: #ffffff;
+	--body-light: #ffffff;
+	--body-dark: #141414;
+}
+
+:root {
+	color-scheme: light;
+	/* set defaults */
+	--brand: var(--brand-light);
+	--text-black: var(--text-black);
+	--black: var(--black);
+	--white: var(--white);
+	--body: var(--body-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: dark;
+		--brand: var(--brand-dark);
+		--text-black: var(--text-white);
+		--background-color: #000;
+		--black: var(--black);
+		--white: var(--white);
+		--body: var(--body-dark);
+	}
+}
+
+body{
+	background: var(--body);
+}
 /*==========================
 		com css end
 ============================*/

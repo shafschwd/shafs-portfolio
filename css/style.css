@@ -50,6 +50,45 @@ ol {
   z-index: -1;
 }
 
+:root {
+  --brand: hsl(133, 100%, 54%);
+  --brand-light: hsl(133, 100%, 54%);
+  --brand-dark: hsl(133, 100%, 40%);
+  --text-black: hsl(0, 0%, 19%);
+  --text-white: hsl(0, 25%, 90%);
+  --black: #000000;
+  --white: #ffffff;
+  --body: #ffffff;
+  --body-light: #ffffff;
+  --body-dark: #141414;
+}
+
+:root {
+  color-scheme: light;
+  /* set defaults */
+  --brand: var(--brand-light);
+  --text-black: var(--text-black);
+  --black: var(--black);
+  --white: var(--white);
+  --body: var(--body-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --brand: var(--brand-dark);
+    --text-black: var(--text-white);
+    --background-color: #000;
+    --black: var(--black);
+    --white: var(--white);
+    --body: var(--body-dark);
+  }
+}
+
+body {
+  background: var(--body);
+}
+
 /*==========================
 		com css end
 ============================*/
@@ -59,20 +98,20 @@ ol {
 
 .menu__logo {
   font-family: "Source Sans Pro", sans-serif;
-  color: #303030;
+  color: var(--text-black);
   font-weight: 400;
 }
 
 .menu__logo2 {
-  color: #14FF47;
+  color: var(--brand-light);
 }
 
 .menu__item {
   padding: 7px 12px;
   font-size: 15px;
   font-weight: 600;
-  color: #303030;
-  border: 2px solid #303030;
+  color: var(--text-black);
+  border: 2px solid var(--text-black);
   text-transform: uppercase;
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
@@ -91,7 +130,7 @@ ol {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #14FF47;
+  background-color: var(--brand-light);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: all 0.3s;
@@ -110,7 +149,7 @@ ol {
   left: 0;
   width: 100%;
   z-index: 9999999;
-  background: #FFFFFF;
+  background: var(--white);
 }
 
 .banner__wrap {
@@ -129,14 +168,14 @@ ol {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 72px;
   font-weight: 300;
-  color: #303030;
+  color: var(--text-black);
 }
 
 .banner__text h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 60px;
   font-weight: 900;
-  color: #303030;
+  color: var(--text-black);
 }
 
 .banner__text h3 {
@@ -144,7 +183,7 @@ ol {
   font-size: 50px;
   font-weight: 300;
   letter-spacing: 3.77px;
-  color: #303030;
+  color: var(--text-black);
   position: relative;
 }
 
@@ -155,7 +194,7 @@ ol {
   top: 6px;
   width: 825px;
   height: 51px;
-  background: #14FF47;
+  background: var(--brand-light);
   z-index: -1;
 }
 
@@ -174,7 +213,7 @@ ol {
 
 #work .work-bg .work--heading h2 {
   font-family: "Source Sans Pro", sans-serif;
-  color: #14FF47;
+  color: var(--brand-light);
   font-size: 60px;
   font-weight: 900;
   padding-bottom: 50px;
@@ -195,7 +234,7 @@ ol {
 
 #work .work-bg .work--text h3 {
   font-family: "Source Sans Pro", sans-serif;
-  color: #FFFFFF;
+  color: var(--text-white);
   font-size: 24px;
   font-weight: 900;
   text-align: center;
@@ -204,7 +243,7 @@ ol {
 
 #work .work-bg .work--text p {
   font-family: "Source Sans Pro", sans-serif;
-  color: #FFFFFF;
+  color: var(--text-white);
   font-size: 18px;
   font-weight: 200;
   text-align: justify;
@@ -248,7 +287,7 @@ ol {
   content: " ";
   width: 1.5625rem;
   height: 2px;
-  background: #FFFFFF;
+  background: var(--text-white);
   top: 50%;
   left: 1.5em;
   position: absolute;
@@ -270,7 +309,7 @@ ol {
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--text-white);
 }
 
 #work .work-bg .work--btn .fancy .top-key {
@@ -308,17 +347,17 @@ ol {
 
 #work .work-bg .work--btn .fancy:hover {
   color: white;
-  background: #14FF47;
-  border: 2px solid #14FF47;
+  background: var(--brand-light);
+  border: 2px solid var(--brand-light);
 }
 
 #work .work-bg .work--btn .fancy:hover::before {
   width: 0.9375rem;
-  background: #303030;
+  background: var(--text-black);
 }
 
 #work .work-bg .work--btn .fancy:hover .text {
-  color: #303030;
+  color: var(--text-black);
   padding-left: 1.5em;
 }
 
@@ -341,7 +380,7 @@ ol {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 60px;
   font-weight: 900;
-  color: #303030;
+  color: var(--text-black);
   padding-bottom: 20px;
 }
 
@@ -349,7 +388,7 @@ ol {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  color: #303030;
+  color: var(--text-black);
   position: relative;
 }
 
@@ -360,7 +399,7 @@ ol {
   top: -10px;
   width: 1221px;
   height: 50px;
-  background: #14FF47;
+  background: var(--brand-light);
   z-index: -1;
 }
 
@@ -368,7 +407,7 @@ ol {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: #303030;
+  color: var(--text-black);
   padding-top: 30px;
 }
 
@@ -394,7 +433,7 @@ ol {
   text-align: center;
   font-size: 18px;
   height: calc((100% - 30px) / 2) !important;
-  color: #FFFFFF;
+  color: var(--white);
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -406,14 +445,14 @@ ol {
 #my-works .my-works--headings h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 900;
-  color: #303030;
+  color: var(--text-black);
   font-size: 60px;
 }
 
 #my-works .my-works--headings h6 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 900;
-  color: #14FF47;
+  color: var(--brand-light);
   font-size: 24px;
 }
 
@@ -447,7 +486,7 @@ ol {
   font-size: 30px;
   font-weight: 400;
   font-family: "Source Sans Pro", sans-serif;
-  color: #FFFFFF;
+  color: var(--text-white);
   text-transform: uppercase;
   text-align: left;
   position: relative;
@@ -459,11 +498,11 @@ ol {
 }
 
 #my-works .work--crd .card-wrap h4 a:hover i {
-  color: #14FF47;
+  color: var(--brand-light);
 }
 
 #my-works .work--crd .card-wrap h4 a i {
-  color: #FFFFFF;
+  color: var(--white);
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
 }
@@ -485,7 +524,7 @@ ol {
   font-size: 12px;
   font-weight: 400;
   font-family: "Source Sans Pro", sans-serif;
-  color: #FFFFFF;
+  color: var(--text-white);
   text-align: left;
   padding-top: 5px;
 }
@@ -498,20 +537,20 @@ ol {
 #footer .footer--text h6 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 900;
-  color: #14FF47;
+  color: var(--brand-light);
   font-size: 24px;
   margin-bottom: 20px;
 }
 
 #footer .footer--icon i {
   font-size: 24px;
-  color: #14FF47;
+  color: var(--brand-light);
   margin: 30px;
   -webkit-transition: all linear .3s;
   transition: all linear .3s;
 }
 
 #footer .footer--icon i:hover {
-  color: #FFFFFF;
+  color: var(--white);
 }
 /*# sourceMappingURL=style.css.map */
