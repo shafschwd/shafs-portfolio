@@ -33,7 +33,6 @@ $(function () {
 
 	// swiper
 	var swiper = new Swiper(".work-mySwiper", {
-		// direction: "vertical",
 		// freeMode: true,
 		slidesPerView: 3,
 		grid: {
@@ -53,6 +52,4 @@ $(function () {
 		// },
 		mousewheel: true,
 	});
-
-	// AOS.init();
 });

@@ -7,11 +7,31 @@
 .menu {
 	height: 50px;
 
-	// &__logo {
-	// 	background-image: url(/images/logo2.png);
-	// 	background-repeat: no-repeat;
-	// 	padding: 10px 0;
-	// }
+	&__logo {
+
+		svg{
+
+			width: 135px;
+			height: 40px;
+
+
+			.st0 {
+				fill: #14ff47;
+			}
+			.st1 {
+				font-family: monospace;
+			}
+			.st2 {
+				font-size: 24px;
+			}
+			.st3 {
+				font-family: $sans;
+			}
+			.st4 {
+				fill: $-text-black;
+			}
+		}
+	}
 
 
 	&__item {

@@ -12,7 +12,7 @@
 .dark-theme {
 	--brand: var(--brand-dark);
 	--text: var(--text-white);
-	--background-color: #000;
+	// --background-color: #000;
 	--black: var(--black);
 	--white: var(--white);
 	--body: var(--body-dark);
@@ -24,14 +24,14 @@
 	background: 0;
 	border: 0;
 	opacity: 0.8;
-    margin: 8px auto;
+    margin: 8px 10px;
 	border-radius: 50%;
 	position: relative;
 	isolation: isolate;
 }
 
 #theme-toggle svg {
-	fill: var(--clr-foreground);
+	fill: $-text-black;
 }
 
 #theme-toggle::before {
@@ -59,7 +59,8 @@
 	color: var(--clr-background);
 	background: var(--clr-foreground);
 	width: max-content;
-	font-size: 1.5rem;
+	font-size: 12px;
+	font-family: $sans;
 	left: 0;
 	right: 0;
 	top: 95%;

@@ -64,6 +64,8 @@ ol {
 	--menu:#ffffff;
 	--menu-light:#ffffff;
 	--menu-dark:#141414;
+	--clr-foreground: hsl(0 0% 0%);
+	--clr-background: hsl(0 0% 100%);
 }
 
 :root {
@@ -75,6 +77,8 @@ ol {
 	--white: var(--white);
 	--body: var(--body-light);
 	--menu:var(--menu-light);
+	--clr-foreground: hsl(0 0% 0%);
+	--clr-background: hsl(0 0% 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,6 +91,8 @@ ol {
 		--white: var(--white);
 		--body: var(--body-dark);
 		--menu: var(--menu-dark);
+		--clr-foreground: hsl(0 0% 0%);
+		--clr-background: hsl(0 0% 100%);
 	}
 }
 
