@@ -20,7 +20,9 @@
 		=================================== -->
 		<nav class="navbar navbar-expand-lg menu p-0">
 			<div class="container px-lg-0">
-				<a class="navbar-brand img-fluid menu__logo" href="#"><img src="images/logo2.png" alt="logo" /></a>
+				<a class="navbar-brand menu__logo" href="#">
+					<img src="images/logo-dark.png" alt="logo" />
+				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -37,6 +39,18 @@
 						</li>
 						<li class="nav-item menu__list">
 							<a class="nav-link menu__item" href="#my-works">works</a>
+						</li>
+						<li>
+							<button id="theme-toggle" aria-label="Switch to dark theme">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 472.39 472.39">
+									<g class="toggle-sun">
+										<path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
+									</g>
+									<g class="toggle-circle">
+										<circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
+									</g>
+								</svg>
+							</button>
 						</li>
 					</ul>
 				</div>
@@ -166,62 +180,64 @@
 					<div class="col-lg-12">
 						<div class="swiper work-mySwiper">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide work--crd" style="background: url(images/project1.jpg) no-repeat;">
+								<div class="swiper-slide work--crd" style="background: url(images/project1.jpg) no-repeat">
 									<div class="card-wrap">
-										<h4>project<a href="#"><i class="fa-solid fa-link"></i></a></h4>
+										<h4>
+											project<a href="#"><i class="fa-solid fa-link"></i></a>
+										</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project2.jpg) no-repeat;">
-								<div class="card-wrap">
+								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project2.jpg) no-repeat">
+									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project3.jpg) no-repeat;">
-								<div class="card-wrap">
+								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project3.jpg) no-repeat">
+									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project1.jpg) no-repeat;">
-								<div class="card-wrap">
+								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project1.jpg) no-repeat">
+									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project2.jpg) no-repeat;">
-								<div class="card-wrap">
+								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project2.jpg) no-repeat">
+									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project3.jpg) no-repeat;">
-								<div class="card-wrap">
+								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project3.jpg) no-repeat">
+									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project1.jpg) no-repeat;">
-								<div class="card-wrap">
+								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project1.jpg) no-repeat">
+									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project2.jpg) no-repeat;">
-								<div class="card-wrap">
+								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project2.jpg) no-repeat">
+									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project3.jpg) no-repeat;">
-								<div class="card-wrap">
+								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project3.jpg) no-repeat">
+									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project1.jpg) no-repeat;">
-								<div class="card-wrap">
+								<div class="swiper-slide img-fluid work--crd" style="background: url(images/project1.jpg) no-repeat">
+									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
@@ -278,6 +294,7 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/waypoints.min.js"></script>
+	<script src="js/darkmode.js"></script>
 	<script src="https://kit.fontawesome.com/63b73cab60.js" crossorigin="anonymous"></script>
 	<script src="js/aos.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>

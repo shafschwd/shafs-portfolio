@@ -74,7 +74,7 @@ ol {
 	--black: var(--black);
 	--white: var(--white);
 	--body: var(--body-light);
-	--menu:var(--menu-light)
+	--menu:var(--menu-light);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,7 +86,7 @@ ol {
 		--black: var(--black);
 		--white: var(--white);
 		--body: var(--body-dark);
-		--menu: var(--menu-dark)
+		--menu: var(--menu-dark);
 	}
 }
 

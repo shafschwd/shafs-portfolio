@@ -1,20 +1,18 @@
 @import "../base/color";
 @import "../base/fonts";
+@import "../components/dbutton";
 
 // menu css start
 
 .menu {
 	height: 50px;
 
-	&__logo {
-		font-family: $sans;
-		color: $-text-black;
-		font-weight: 400;
-	}
+	// &__logo {
+	// 	background-image: url(/images/logo2.png);
+	// 	background-repeat: no-repeat;
+	// 	padding: 10px 0;
+	// }
 
-	&__logo2 {
-		color: $brand;
-	}
 
 	&__item {
 		padding: 7px 12px;
