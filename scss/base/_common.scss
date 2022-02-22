@@ -53,6 +53,7 @@ ol {
 	--brand: hsl(133, 100%, 54%);
 	--brand-light: hsl(133, 100%, 54%);
 	--brand-dark: hsl(133, 100%, 40%);
+	--text:hsl(0, 0%, 19%);
 	--text-black: hsl(0, 0%, 19%);
 	--text-white: hsl(0, 25%, 90%);
 	--black: #000000;
@@ -60,27 +61,32 @@ ol {
 	--body: #ffffff;
 	--body-light: #ffffff;
 	--body-dark: #141414;
+	--menu:#ffffff;
+	--menu-light:#ffffff;
+	--menu-dark:#141414;
 }
 
 :root {
 	color-scheme: light;
 	/* set defaults */
 	--brand: var(--brand-light);
-	--text-black: var(--text-black);
+	--text: var(--text-black);
 	--black: var(--black);
 	--white: var(--white);
 	--body: var(--body-light);
+	--menu:var(--menu-light)
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		color-scheme: dark;
 		--brand: var(--brand-dark);
-		--text-black: var(--text-white);
+		--text: var(--text-white);
 		--background-color: #000;
 		--black: var(--black);
 		--white: var(--white);
 		--body: var(--body-dark);
+		--menu: var(--menu-dark)
 	}
 }
 
