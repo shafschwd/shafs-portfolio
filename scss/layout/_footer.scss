@@ -9,20 +9,32 @@
 			color: $brand;
 			font-size: 24px;
 			margin-bottom: 20px;
+
+			a{
+				color: $brand;
+			}
 		}
 	}
 
 	.footer--icon {
-		i {
-			font-size: 24px;
-			color: $brand;
-			margin: 30px;
-			transition: all linear .3s;
+		
+		li{
+			list-style: none;
+			text-decoration: none;
+			display: inline;
 
-			&:hover{
-				color: $white;
+			i {
+				font-size: 24px;
+				color: $brand;
+				margin: 30px;
+				transition: all linear .3s;
+	
+				&:hover{
+					color: $white;
+				}
 			}
 		}
+
 	}
 }
 

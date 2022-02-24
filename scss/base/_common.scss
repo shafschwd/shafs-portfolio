@@ -96,6 +96,10 @@ ol {
 	}
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	background: var(--body);
 }

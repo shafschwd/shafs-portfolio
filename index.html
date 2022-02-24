@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/aos.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
 
 	<body>
@@ -20,7 +21,7 @@
 		=================================== -->
 		<nav class="navbar navbar-expand-lg menu p-0">
 			<div class="container px-lg-0">
-				<a class="navbar-brand menu__logo" href="#">
+				<a class="navbar-brand menu__logo title" href="#">
 					<?xml version="1.0" encoding="utf-8"?>
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 130 35" style="enable-background: new 0 0 130 35" xml:space="preserve">
 						<text transform="matrix(1 0 0 1 8.3443 25.2882)">
@@ -76,14 +77,14 @@
 				<div class="row">
 					<div class="col-lg-4 offset-lg-1">
 						<div class="banner__img">
-							<img class="img-fluid" src="images/profile2.png" alt="profile" />
+							<img class="img-fluid image" src="images/profile2.png" alt="profile" />
 						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="banner__text m-auto text-start">
-							<h2>Hi, i am</h2>
-							<h1>shafi chowdhury</h1>
-							<h3>FRONT <span class="type-banner"></span></h3>
+							<h2 class="title">Hi, i am</h2>
+							<h1 class="title">shafi chowdhury</h1>
+							<h3 class="">FRONT <span class="type-banner"></span></h3>
 						</div>
 					</div>
 				</div>
@@ -103,9 +104,9 @@
 				<div class="row">
 					<div class="col-lg-8">
 						<div class="about--main">
-							<h4>Who I am</h4>
-							<h5>Designer & developer <span class="type-about"></span></h5>
-							<p>
+							<h4 class="title">Who I am</h4>
+							<h5 class="sub-title">Designer & developer <span class="type-about"></span></h5>
+							<p class="pgraph">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore sed adipisci minus vitae quas corrupti quis rem labore cumque non quibusdam aperiam id alias officiis dicta commodi, repudiandae tempora! Inventore cumque voluptatum iure, dolore quod doloribus molestias, natus odio ipsum vitae quisquam, enim architecto itaque amet minima eos veniam asperiores quas sed assumenda animi veritatis. Illo delectus porro vero?
 								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore sed adipisci minus vitae quas corrupti quis rem labore cumque non quibusdam aperiam id alias officiis dicta commodi, repudiandae tempora! Inventore cumque voluptatum iure, dolore quod doloribus molestias, natus odio ipsum vitae quisquam, enim architecto itaque amet minima eos veniam asperiores quas sed assumenda animi veritatis. Illo delectus porro vero?</span>
 							</p>
@@ -113,7 +114,7 @@
 					</div>
 					<div class="col-lg-4">
 						<div class="about--img">
-							<img src="images/about.png" class="img-fluid w-100" alt="about" loading="lazy" />
+							<img src="images/about.png" class="img-fluid w-100 image" alt="about" loading="lazy" />
 						</div>
 					</div>
 				</div>
@@ -126,7 +127,7 @@
 		<!-- ==============================
 				work start
 		====================================-->
-		<section id="work">
+		<section id="work" class="title">
 			<div class="com-overlay work-bg" style="background: url(images/work-bg.png) no-repeat center/cover">
 				<div class="container px-lg-0">
 					<div class="row">
@@ -174,7 +175,7 @@
 		<!-- ====================================
 				my work start
 		=========================================-->
-		<section id="my-works">
+		<section id="my-works" class="title">
 			<div class="container px-lg-0">
 				<div class="row">
 					<div class="col-lg-12">
@@ -265,30 +266,40 @@
 		<!-- ========================
 					footer start
 		============================= -->
-		<footer id="footer">
+		<footer id="footer" class="title">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="footer--text text-center">
-							<h6>shafichwd@gmail.com</h6>
+							<h6 class="title">
+								<a href="mailto:shafichwd@gmail.com">shafichwd@gmail.com</a>
+							</h6>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-12 d-flex justify-content-center">
-						<div class="footer--icon text-center">
-							<a href="#">
-								<i class="fab fa-codepen"></i>
-							</a>
-							<a href="#">
-								<i class="fab fa-dribbble"></i>
-							</a>
-							<a href="#">
-								<i class="fab fa-twitter"></i>
-							</a>
-							<a href="#">
-								<i class="fab fa-github"></i>
-							</a>
+						<div class="footer--icon text-center icon">
+							<li>
+								<a href="#">
+									<i class="fab fa-codepen"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-dribbble"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-github"></i>
+								</a>
+							</li>
 						</div>
 					</div>
 				</div>
@@ -304,7 +315,6 @@
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/darkmode.js"></script>
 	<script src="https://kit.fontawesome.com/63b73cab60.js" crossorigin="anonymous"></script>
-	<script src="js/aos.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/type.min.js"></script>
 	<script src="js/script.js"></script>

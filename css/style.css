@@ -97,6 +97,10 @@ ol {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--body);
 }
@@ -201,6 +205,10 @@ ol {
     --clr-foreground: hsl(0 0% 0%);
     --clr-background: hsl(0 0% 100%);
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -881,7 +889,17 @@ body {
   margin-bottom: 20px;
 }
 
-#footer .footer--icon i {
+#footer .footer--text h6 a {
+  color: var(--brand);
+}
+
+#footer .footer--icon li {
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+}
+
+#footer .footer--icon li i {
   font-size: 24px;
   color: var(--brand);
   margin: 30px;
@@ -889,7 +907,7 @@ body {
   transition: all linear .3s;
 }
 
-#footer .footer--icon i:hover {
+#footer .footer--icon li i:hover {
   color: var(--white);
 }
 /*# sourceMappingURL=style.css.map */

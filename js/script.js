@@ -52,4 +52,19 @@ $(function () {
 		// },
 		mousewheel: true,
 	});
+
+	//scroll js
+	ScrollReveal({
+		reset: true,
+		distance: '60px',
+		duration: 2500,
+		delay: 400,
+	})
+
+	ScrollReveal().reveal('.title', { delay: 200, origin: 'bottom'});
+	ScrollReveal().reveal('.sub-title', { delay: 200, origin: 'down'});
+	ScrollReveal().reveal('.image', { delay: 200, origin: 'right'});
+	ScrollReveal().reveal('.pgraph', { delay: 200, origin: 'top'});
+	ScrollReveal().reveal('.icon i', { delay: 400, origin: 'top', interval: 200 });
+
 });
