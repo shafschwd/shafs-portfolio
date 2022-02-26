@@ -14,21 +14,13 @@
 			width: 135px;
 			height: 40px;
 
-
 			.st0 {
-				fill: #14ff47;
-			}
-			.st1 {
-				font-family: monospace;
-			}
-			.st2 {
-				font-size: 24px;
-			}
-			.st3 {
+				fill: $brand;
 				font-family: $sans;
 			}
-			.st4 {
+			.st1 {
 				fill: $-text-black;
+				font-family: $sans;
 			}
 		}
 	}

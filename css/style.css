@@ -434,23 +434,13 @@ body {
 }
 
 .menu__logo svg .st0 {
-  fill: #14ff47;
-}
-
-.menu__logo svg .st1 {
-  font-family: monospace;
-}
-
-.menu__logo svg .st2 {
-  font-size: 24px;
-}
-
-.menu__logo svg .st3 {
+  fill: var(--brand);
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.menu__logo svg .st4 {
+.menu__logo svg .st1 {
   fill: var(--text);
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .menu__item {
