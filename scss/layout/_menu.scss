@@ -68,4 +68,6 @@
 	width: 100%;
 	z-index: 9999999;
 	background: $menu;
+	display: flex;
+	justify-content: space-evenly;
 }

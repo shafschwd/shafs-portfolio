@@ -487,6 +487,12 @@ body {
   width: 100%;
   z-index: 9999999;
   background: var(--menu);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .banner__wrap {
@@ -535,13 +541,26 @@ body {
   z-index: -1;
 }
 
-.banner__bg {
-  padding: 115px 0 200px;
+.banner_p {
+  padding-top: 100px;
+}
+
+.banner__bg svg {
+  margin: -1px 0;
+}
+
+.banner__bg svg .sdown {
+  fill: var(--brand);
+  margin-top: -1px;
+}
+
+.banner__bg svg .sup {
+  fill: var(--brand);
+  margin-bottom: -1px;
 }
 
 .typed-cursor {
   font-size: 50px;
-  color: red;
 }
 
 #work .work-bg {

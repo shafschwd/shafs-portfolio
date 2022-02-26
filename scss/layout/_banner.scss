@@ -52,11 +52,27 @@
 	}
 }
 
+.banner_p{
+	padding-top: 100px;
+}
+
 .banner__bg {
-	padding: 115px 0 200px;
+
+	svg{
+		margin: -1px 0;
+
+		.sdown {
+			fill: $brand;
+			margin-top: -1px;
+		}
+
+		.sup{
+			fill: $brand;
+			margin-bottom: -1px;
+		}
+	}
 }
 
 .typed-cursor{
     font-size: 50px;
-    color: red;
 }
