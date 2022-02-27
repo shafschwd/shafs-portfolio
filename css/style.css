@@ -781,10 +781,6 @@ body {
   padding: 3rem 0;
 }
 
-.swiper .swiper-wrapper {
-  height: 510px;
-}
-
 .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;

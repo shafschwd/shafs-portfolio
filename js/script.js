@@ -12,6 +12,18 @@ $(function () {
 		}
 	});
 
+	var mapping = $(".ms-auto").offset().top;
+
+	$(window).scroll(function () {
+		var scrolling = $(this).scrollTop();
+
+		if (scrolling > mapping) {
+			$(".ms-auto").addClass("m-auto");
+		} else {
+			$(".ms-auto").removeClass("m-auto");
+		}
+	});
+
 	// type js
 	var typed = new Typed(".type-banner", {
 		strings: ["END-DEV"],
@@ -58,13 +70,22 @@ $(function () {
 		reset: true,
 		distance: '60px',
 		duration: 2500,
-		delay: 400,
+		// delay: 400,
 	})
 
-	ScrollReveal().reveal('.title', { delay: 200, origin: 'bottom'});
-	ScrollReveal().reveal('.sub-title', { delay: 200, origin: 'down'});
-	ScrollReveal().reveal('.image', { delay: 200, origin: 'right'});
-	ScrollReveal().reveal('.pgraph', { delay: 200, origin: 'top'});
+	ScrollReveal().reveal('.sor-t', { delay: 200, origin: 'top'});
+	ScrollReveal().reveal('.sor-b', { delay: 200, origin: 'bottom'});
+	ScrollReveal().reveal('.sor-r', { delay: 200, origin: 'right'});
+	ScrollReveal().reveal('.sor-l', { delay: 200, origin: 'left'});
 	ScrollReveal().reveal('.icon i', { delay: 400, origin: 'top', interval: 200 });
+
+	// logo anim
+	gsap.timeline()
+	.fromTo("#s1", { y: 10, opacity: 0}, {opacity: 1, y: 0, duration: 1})
+	.fromTo("#h", { y: -10, opacity: 0}, {opacity: 1, y: 0, duration: 1})
+	.fromTo("#a", { x: -10, opacity: 0}, {opacity: 1, x: 0, duration: 1})
+	.fromTo("#f", { x: 10, opacity: 0}, {opacity: 1, x: 0, duration: 1})
+	.fromTo("#s2", { opacity: 0}, {opacity: 1, rotation:360, duration: 1})
+	.fromTo("#bracket", { x: -53}, {x:0, ease: "none", duration: 3.5}, 0)
 
 });
