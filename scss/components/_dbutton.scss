@@ -12,7 +12,6 @@
 .dark-theme {
 	--brand: var(--brand-dark);
 	--text: var(--text-white);
-	// --background-color: #000;
 	--black: var(--black);
 	--white: var(--white);
 	--body: var(--body-dark);
@@ -21,13 +20,11 @@
 
 #theme-toggle {
 	cursor: pointer;
-	background: 0;
 	border: 0;
 	opacity: 0.8;
-    margin: 8px 10px;
-	border-radius: 50%;
+	border-radius: 60%;
 	position: relative;
-	isolation: isolate;
+	// isolation: isolate;
 }
 
 #theme-toggle svg {

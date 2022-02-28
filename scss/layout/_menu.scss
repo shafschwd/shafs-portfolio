@@ -25,6 +25,34 @@
 		}
 	}
 
+	// ul{
+	// 	&:first-child(){
+	// 		margin-left: 0;
+	// 	}
+	// }
+
+	&__list{
+		margin: 0 10px;
+		
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	&__spacing{
+		margin: 0 80px;
+		transition:all cubic-bezier(1,-0.73,.19,1.3) .2s;
+		
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
 
 	&__item {
 		padding: 7px 12px;
@@ -35,7 +63,6 @@
 		text-transform: uppercase;
 		text-align: center;
 		font-family: $sans;
-		margin: 0 10px;
 		cursor: pointer;
 		position: relative;
 		background-color: transparent;
@@ -69,5 +96,4 @@
 	z-index: 9999999;
 	background: $menu;
 	display: flex;
-	justify-content: space-evenly;
 }
