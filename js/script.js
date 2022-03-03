@@ -24,17 +24,17 @@ $(function () {
 	// 	}
 	// });
 
-	var mapping = $(".menu__list").offset().top;
+	// var mapping = $(".menu__list").offset().top;
 
-	$(window).scroll(function () {
-		var scrolling = $(this).scrollTop();
+	// $(window).scroll(function () {
+	// 	var scrolling = $(this).scrollTop();
 
-		if (scrolling > mapping) {
-			$(".menu__list").addClass("menu__spacing");
-		} else {
-			$(".menu__list").removeClass("menu__spacing");
-		}
-	});
+	// 	if (scrolling > mapping) {
+	// 		$(".menu__list").addClass("menu__spacing");
+	// 	} else {
+	// 		$(".menu__list").removeClass("menu__spacing");
+	// 	}
+	// });
 
 	// type js
 	var typed = new Typed(".type-banner", {

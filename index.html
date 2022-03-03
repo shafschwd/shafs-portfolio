@@ -9,9 +9,10 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/scroll.css" />
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="css/aos.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+
 		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
 
@@ -19,9 +20,9 @@
 		<!-- ===================================
                     menu start
 		=================================== -->
-		<nav class="navbar navbar-expand-lg menu p-0">
-			<div class="container px-lg-0">
-				<a class="navbar-brand menu__logo sor-b" href="#"> 
+		<nav class="navbar fixed-top navbar-expand-lg menu">
+			<div class="container">
+				<a class="navbar-brand menu__logo sor-b" href="#">
 					<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 130 35" style="enable-background: new 0 0 130 35" xml:space="preserve">
 						<g id="green">
 							<path class="st0" d="M7.92,19.01l11.14-5.74v1.66l-9.38,4.7v0.05l9.38,4.7v1.66L7.92,20.31V19.01z" />
@@ -108,36 +109,52 @@
 						</g>
 					</svg>
 				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
+					<i class="menu__burger fa-solid fa-bars"></i>
 				</button>
-				<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-					<ul class="navbar-nav mb-2 ms-auto mb-lg-0 menu__wrap">
-						<li class="nav-item menu__list">
-							<a class="nav-link menu__item active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item menu__list">
-							<a class="nav-link menu__item" href="#about-me">about me</a>
-						</li>
-						<li class="nav-item menu__list">
-							<a class="nav-link menu__item" href="#work">my skills</a>
-						</li>
-						<li class="nav-item menu__list">
-							<a class="nav-link menu__item" href="#my-works">works</a>
-						</li>
-						<li class="nav-item menu__list">
-							<button class="nav-link menu__item" id="theme-toggle" aria-label="Switch to dark theme">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 472.39 472.39">
-									<g class="toggle-sun">
-										<path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
-									</g>
-									<g class="toggle-circle">
-										<circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
-									</g>
-								</svg>
-							</button>
-						</li>
-					</ul>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<button class="nav-link menu__list text-center" id="theme-toggle-ofc" aria-label="Switch to dark theme">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 472.39 472.39">
+								<g class="toggle-sun">
+									<path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
+								</g>
+								<g class="toggle-circle">
+									<circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
+								</g>
+							</svg>
+						</button>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item menu__list">
+								<a class="nav-link menu__item active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item menu__list">
+								<a class="nav-link menu__item" href="#about-me">about me</a>
+							</li>
+							<li class="nav-item menu__list">
+								<a class="nav-link menu__item" href="#work">my skills</a>
+							</li>
+							<li class="nav-item menu__list">
+								<a class="nav-link menu__item" href="#my-works">works</a>
+							</li>
+							<li class="nav-item menu__list">
+								<button class="nav-link menu__list text-center" id="theme-toggle" aria-label="Switch to dark theme">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 472.39 472.39">
+										<g class="toggle-sun">
+											<path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
+										</g>
+										<g class="toggle-circle">
+											<circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
+										</g>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -269,7 +286,7 @@
 					<div class="col-lg-12">
 						<div class="swiper work-mySwiper sor-b">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide work--crd" style="background-color: cornflowerblue;">
+								<div class="swiper-slide work--crd" style="background-color: cornflowerblue">
 									<div class="card-wrap">
 										<h4>
 											project<a href="#"><i class="fa-solid fa-link"></i></a>
@@ -277,31 +294,31 @@
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background-color: aqua;">
+								<div class="swiper-slide img-fluid work--crd" style="background-color: aqua">
 									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background-color: rgb(0, 255, 21);">
+								<div class="swiper-slide img-fluid work--crd" style="background-color: rgb(0, 255, 21)">
 									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background-color: deeppink;">
+								<div class="swiper-slide img-fluid work--crd" style="background-color: deeppink">
 									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background-color: crimson;">
+								<div class="swiper-slide img-fluid work--crd" style="background-color: crimson">
 									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
 									</div>
 								</div>
-								<div class="swiper-slide img-fluid work--crd" style="background-color: goldenrod;">
+								<div class="swiper-slide img-fluid work--crd" style="background-color: goldenrod">
 									<div class="card-wrap">
 										<h4>project</h4>
 										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab velit omnis repudiandae a dolorum et atque, quasi fugit culpa recusandae deserunt delectus quibusdam temporibus aliquam nisi ullam, quia explicabo molestiae?</p>
@@ -395,6 +412,7 @@
 	<script src="js/waypoints.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 	<script src="js/darkmode.js"></script>
+	<script src="js/darkofc.js"></script>
 	<script src="https://kit.fontawesome.com/63b73cab60.js" crossorigin="anonymous"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/type.min.js"></script>
