@@ -21,6 +21,10 @@
 			font-weight: 400;
 			color: $-text-black;
 			position: relative;
+			
+			@include sm{
+				font-size: 18px;
+			}
 
 			&::before {
 				position: absolute;
@@ -31,6 +35,11 @@
 				height: 50px;
 				background: $brand;
 				z-index: -1;
+
+				@include sm{
+					width: 95vw;
+					height: 35px;
+				}
 			}
 		}
 
