@@ -86,11 +86,11 @@ $(function () {
 		// delay: 400,
 	})
 
-	// ScrollReveal().reveal('.sor-t', { delay: 200, origin: 'top'});
-	// ScrollReveal().reveal('.sor-b', { delay: 200, origin: 'bottom'});
+	ScrollReveal().reveal('.sor-t', { delay: 200, origin: 'top'});
+	ScrollReveal().reveal('.sor-b', { delay: 200, origin: 'bottom'});
 	// ScrollReveal().reveal('.sor-r', { delay: 200, origin: 'right'});
-	// ScrollReveal().reveal('.sor-l', { delay: 200, origin: 'left'});
-	// ScrollReveal().reveal('.icon i', { delay: 400, origin: 'top', interval: 200 });
+	ScrollReveal().reveal('.sor-l', { delay: 200, origin: 'left'});
+	ScrollReveal().reveal('.icon i', { delay: 400, origin: 'top', interval: 200 });
 
 	// logo anim
 	gsap.timeline()
