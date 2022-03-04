@@ -28,6 +28,10 @@
 				color: $brand;
 				margin: 30px;
 				transition: all linear .3s;
+				
+				@include sm{
+					margin: 20px;
+				}
 	
 				&:hover{
 					color: $white;

@@ -52,10 +52,10 @@ ol {
 :root {
 	--brand: hsl(133, 100%, 54%);
 	--brand-light: hsl(133, 100%, 54%);
-	--brand-dark: hsl(133, 100%, 40%);
+	--brand-dark: hsl(133, 80%, 54%);
 	--text:hsl(0, 0%, 19%);
 	--text-black: hsl(0, 0%, 19%);
-	--text-white: hsl(216, 12%, 92%);
+	--text-white: hsl(0, 6%, 100%);
 	--black: #000000;
 	--white: #ffffff;
 	--body: #ffffff;
@@ -86,7 +86,6 @@ ol {
 		color-scheme: dark;
 		--brand: var(--brand-dark);
 		--text: var(--text-white);
-		--background-color: #000;
 		--black: var(--black);
 		--white: var(--white);
 		--body: var(--body-dark);
@@ -102,6 +101,7 @@ html{
 
 body{
 	background: var(--body);
+	overflow-x: hidden;
 }
 /*==========================
 		com css end

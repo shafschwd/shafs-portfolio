@@ -53,10 +53,10 @@ ol {
 :root {
   --brand: hsl(133, 100%, 54%);
   --brand-light: hsl(133, 100%, 54%);
-  --brand-dark: hsl(133, 100%, 40%);
+  --brand-dark: hsl(133, 80%, 54%);
   --text:hsl(0, 0%, 19%);
   --text-black: hsl(0, 0%, 19%);
-  --text-white: hsl(216, 12%, 92%);
+  --text-white: hsl(0, 6%, 100%);
   --black: #000000;
   --white: #ffffff;
   --body: #ffffff;
@@ -87,7 +87,6 @@ ol {
     color-scheme: dark;
     --brand: var(--brand-dark);
     --text: var(--text-white);
-    --background-color: #000;
     --black: var(--black);
     --white: var(--white);
     --body: var(--body-dark);
@@ -103,6 +102,7 @@ html {
 
 body {
   background: var(--body);
+  overflow-x: hidden;
 }
 
 /*==========================
@@ -481,6 +481,7 @@ body {
 
 .menu__burger {
   color: var(--text);
+  margin-top: 12px;
 }
 
 .menu__list {
@@ -493,6 +494,12 @@ body {
 
 .menu__list:last-child {
   margin-right: 0;
+}
+
+@media (max-width: 575.98px) {
+  .menu__list {
+    margin: 10px 0;
+  }
 }
 
 .menu__item {
@@ -509,6 +516,12 @@ body {
   background-color: transparent;
   overflow: hidden;
   z-index: 1;
+}
+
+@media (max-width: 575.98px) {
+  .menu__item {
+    background-color: var(--brand);
+  }
 }
 
 .menu__item::before {
@@ -543,17 +556,44 @@ body {
   display: flex;
 }
 
-.offcanvas-header {
-  background: var(--body);
+.navbar-toggler:hover {
+  text-decoration: none;
 }
 
-.offcanvas-body {
-  background: var(--body);
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
 }
 
 @media (max-width: 575.98px) {
   #theme-toggle {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #theme-toggle-ofc {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #theme-toggle-ofc {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  #theme-toggle-ofc {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #banner {
+    padding: 0 10px;
   }
 }
 
@@ -569,6 +609,14 @@ body {
           box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
 
+@media (max-width: 575.98px) {
+  .banner__img img {
+    width: 250px;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
 .banner__text h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 72px;
@@ -576,11 +624,26 @@ body {
   color: var(--text);
 }
 
+@media (max-width: 575.98px) {
+  .banner__text h2 {
+    text-align: center;
+    font-size: 62px;
+  }
+}
+
 .banner__text h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 60px;
   font-weight: 900;
   color: var(--text);
+}
+
+@media (max-width: 575.98px) {
+  .banner__text h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 5px 0;
+  }
 }
 
 .banner__text h3 {
@@ -592,6 +655,14 @@ body {
   position: relative;
 }
 
+@media (max-width: 575.98px) {
+  .banner__text h3 {
+    font-size: 30px;
+    text-align: center;
+    background: var(--brand);
+  }
+}
+
 .banner__text h3::before {
   position: absolute;
   content: "";
@@ -601,6 +672,12 @@ body {
   height: 51px;
   background: var(--brand);
   z-index: -1;
+}
+
+@media (max-width: 575.98px) {
+  .banner__text h3::before {
+    display: none;
+  }
 }
 
 .banner_p {
@@ -794,6 +871,12 @@ body {
   padding: 200px 0;
 }
 
+@media (max-width: 575.98px) {
+  #about-me {
+    padding: 100px 10px;
+  }
+}
+
 #about-me .about--main h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 60px;
@@ -802,17 +885,26 @@ body {
   padding-bottom: 20px;
 }
 
+@media (max-width: 575.98px) {
+  #about-me .about--main h4 {
+    text-align: center;
+  }
+}
+
 #about-me .about--main h5 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--text);
   position: relative;
 }
 
 @media (max-width: 575.98px) {
   #about-me .about--main h5 {
-    font-size: 18px;
+    font-size: 30px;
+    background: var(--brand);
+    padding: 5px 0;
+    text-align: center;
   }
 }
 
@@ -829,8 +921,7 @@ body {
 
 @media (max-width: 575.98px) {
   #about-me .about--main h5::before {
-    width: 95vw;
-    height: 35px;
+    display: none;
   }
 }
 
@@ -842,9 +933,22 @@ body {
   padding-top: 30px;
 }
 
+@media (max-width: 575.98px) {
+  #about-me .about--main p {
+    text-align: center;
+  }
+}
+
 #about-me .about--main p span {
   display: block;
   padding-top: 30px;
+}
+
+@media (max-width: 575.98px) {
+  #about-me .about--main p span {
+    padding-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .swiper {
@@ -985,6 +1089,12 @@ body {
   margin: 30px;
   -webkit-transition: all linear .3s;
   transition: all linear .3s;
+}
+
+@media (max-width: 575.98px) {
+  #footer .footer--icon li i {
+    margin: 20px;
+  }
 }
 
 #footer .footer--icon li i:hover {

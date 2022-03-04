@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>devshafs</title>
+		<!-- fav -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/fav/favicon-16x16.png" />
@@ -13,8 +14,7 @@
 		<link rel="shortcut icon" href="/images/fav/favicon.ico" />
 		<meta name="msapplication-TileColor" content="#fff2ee" />
 		<meta name="msapplication-config" content="/images/fav/browserconfig.xml" />
-
-		<meta name="description" content="This ultimate guide cover all the important aspects of blogging. Find out how to set up a succesful blog or to make yours even better!" />
+		<meta name="description" content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sunt maiores tempora iste minima recusandae dolores neque cupiditate atque expedita, blanditiis quo dolorum ipsa illum pariatur aliquam tenetur eius necessitatibus quos harum distinctio! Similique dolores ex rem tempore tempora, dolorem earum accusamus obcaecati, a neque temporibus? Enim ea dicta molestiae?" />
 		<link rel="canonical" href="https://shafs-portfolio.vercel.app" />
 		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#14ff47" />
 
@@ -24,7 +24,6 @@
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/responsive.css" />
 
 		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
@@ -33,9 +32,9 @@
 		<!-- ===================================
                     menu start
 		=================================== -->
-		<nav class="navbar fixed-top navbar-expand-lg menu">
-			<div class="container">
-				<a class="navbar-brand menu__logo sor-b" href="#">
+		<nav class="navbar navbar-expand-lg menu p-0">
+			<div class="container px-lg-0">
+				<a class="navbar-brand menu__logo sor-b" href="#"> 
 					<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 130 35" style="enable-background: new 0 0 130 35" xml:space="preserve">
 						<g id="green">
 							<path class="st0" d="M7.92,19.01l11.14-5.74v1.66l-9.38,4.7v0.05l9.38,4.7v1.66L7.92,20.31V19.01z" />
@@ -122,52 +121,46 @@
 						</g>
 					</svg>
 				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-					<span class="navbar-toggler-icon"></span>
-					<i class="menu__burger fa-solid fa-bars"></i>
+				<button class="nav-link menu__list text-center" id="theme-toggle-ofc" aria-label="Switch to dark theme">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 472.39 472.39">
+						<g class="toggle-sun">
+							<path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
+						</g>
+						<g class="toggle-circle">
+							<circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
+						</g>
+					</svg>
 				</button>
-				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-					<div class="offcanvas-header">
-						<button class="nav-link menu__list text-center" id="theme-toggle-ofc" aria-label="Switch to dark theme">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 472.39 472.39">
-								<g class="toggle-sun">
-									<path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
-								</g>
-								<g class="toggle-circle">
-									<circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
-								</g>
-							</svg>
-						</button>
-						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					</div>
-					<div class="offcanvas-body">
-						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item menu__list">
-								<a class="nav-link menu__item active" aria-current="page" href="#">Home</a>
-							</li>
-							<li class="nav-item menu__list">
-								<a class="nav-link menu__item" href="#about-me">about me</a>
-							</li>
-							<li class="nav-item menu__list">
-								<a class="nav-link menu__item" href="#work">my skills</a>
-							</li>
-							<li class="nav-item menu__list">
-								<a class="nav-link menu__item" href="#my-works">works</a>
-							</li>
-							<li class="nav-item menu__list">
-								<button class="nav-link menu__list text-center" id="theme-toggle" aria-label="Switch to dark theme">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 472.39 472.39">
-										<g class="toggle-sun">
-											<path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
-										</g>
-										<g class="toggle-circle">
-											<circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
-										</g>
-									</svg>
-								</button>
-							</li>
-						</ul>
-					</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="menu__burger navbar-toggler-icon fa-solid fa-burger"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+					<ul class="navbar-nav mb-2 ms-auto mb-lg-0 menu__wrap">
+						<li class="nav-item menu__list">
+							<a class="nav-link menu__item active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item menu__list">
+							<a class="nav-link menu__item" href="#about-me">about me</a>
+						</li>
+						<li class="nav-item menu__list">
+							<a class="nav-link menu__item" href="#work">my skills</a>
+						</li>
+						<li class="nav-item menu__list">
+							<a class="nav-link menu__item" href="#my-works">works</a>
+						</li>
+						<li class="nav-item menu__list">
+							<button class="nav-link menu__item" id="theme-toggle" aria-label="Switch to dark theme">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 472.39 472.39">
+									<g class="toggle-sun">
+										<path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
+									</g>
+									<g class="toggle-circle">
+										<circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
+									</g>
+								</svg>
+							</button>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
@@ -181,12 +174,12 @@
 		<section id="banner">
 			<div class="container px-lg-0 banner__wrap">
 				<div class="row">
-					<div class="col-lg-4 offset-lg-1">
+					<div class="col-lg-4 offset-lg-1 order-2 order-lg-1">
 						<div class="banner__img">
 							<img class="img-fluid sor-r" src="images/profile2.png" alt="profile" />
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 order-1 order-lg-2">
 						<div class="banner__text m-auto text-start">
 							<h2 class="sor-b">Hi, i am</h2>
 							<h1 class="sor-b">shafi chowdhury</h1>
@@ -195,27 +188,29 @@
 					</div>
 				</div>
 			</div>
-			<div class="banner__bg banner_p">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="sup" fill-opacity="1" d="M0,288L40,245.3C80,203,160,117,240,90.7C320,64,400,96,480,144C560,192,640,256,720,266.7C800,277,880,235,960,192C1040,149,1120,107,1200,90.7C1280,75,1360,85,1400,90.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-			</div>
 		</section>
 		<!-- =========================
 			banner end
-			===============================-->
+		===============================-->
 
-		<!--=============================
-				about me start
-				==================================-->
+		<!-- shpaes -->
+		<div class="banner__bg banner_p">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="sup" fill-opacity="1" d="M0,288L40,245.3C80,203,160,117,240,90.7C320,64,400,96,480,144C560,192,640,256,720,266.7C800,277,880,235,960,192C1040,149,1120,107,1200,90.7C1280,75,1360,85,1400,90.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+		</div>
 		<div class="banner__bg">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="sdown" fill-opacity="1" d="M0,288L40,245.3C80,203,160,117,240,90.7C320,64,400,96,480,144C560,192,640,256,720,266.7C800,277,880,235,960,192C1040,149,1120,107,1200,90.7C1280,75,1360,85,1400,90.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 		</div>
+
+		<!--=============================
+				about me start
+		==================================-->
 		<section id="about-me">
 			<div class="container px-lg-0">
 				<div class="row">
 					<div class="col-lg-8">
 						<div class="about--main">
 							<h4 class="sor-b">Who I am</h4>
-							<h5 class="sor-t">Designer & developer <span class="type-about"></span></h5>
+							<h5 class="sor-t">Developer based out <span class="type-about"></span></h5>
 							<p class="sor-l">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore sed adipisci minus vitae quas corrupti quis rem labore cumque non quibusdam aperiam id alias officiis dicta commodi, repudiandae tempora! Inventore cumque voluptatum iure, dolore quod doloribus molestias, natus odio ipsum vitae quisquam, enim architecto itaque amet minima eos veniam asperiores quas sed assumenda animi veritatis. Illo delectus porro vero?
 								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore sed adipisci minus vitae quas corrupti quis rem labore cumque non quibusdam aperiam id alias officiis dicta commodi, repudiandae tempora! Inventore cumque voluptatum iure, dolore quod doloribus molestias, natus odio ipsum vitae quisquam, enim architecto itaque amet minima eos veniam asperiores quas sed assumenda animi veritatis. Illo delectus porro vero?</span>
@@ -362,8 +357,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-scrollbar"></div>
-							<!-- <div class="swiper-pagination"></div> -->
+							<!-- <div class="swiper-scrollbar"></div> -->
+							<div class="swiper-pagination"></div>
 						</div>
 					</div>
 				</div>

@@ -43,12 +43,13 @@ $(function () {
 		typeSpeed: 60,
 		backSpeed: 60,
 		startDelay: 400,
-		// showCursor: false,
-		cursorChar: "💻",
+		showCursor: false,
+		// cursorChar: "💻",
 	});
+	
 	var typed = new Typed(".type-about", {
-		strings: ["based out of BD"],
-		loop: true,
+		strings: ["of Bangladesh"],
+		loop: false,
 		typeSpeed: 40,
 		backSpeed: 40,
 		startDelay: 200,
@@ -63,18 +64,18 @@ $(function () {
 			rows: 2,
 		},
 		spaceBetween: 30,
-		// pagination: {
-		// 	el: ".swiper-pagination",
-		// 	clickable: true,
-		// },
-		scrollbar: {
-			el: ".swiper-scrollbar",
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
 		},
+		// scrollbar: {
+		// 	el: ".swiper-scrollbar",
+		// },
 		// autoplay: {
 		// 	delay: 2500,
 		// 	disableOnInteraction: false,
 		// },
-		mousewheel: true,
+		// mousewheel: true,
 	});
 
 	//scroll js

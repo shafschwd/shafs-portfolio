@@ -2,6 +2,12 @@
 @import "../base/fonts";
 
 // banner start
+#banner{
+	@include sm {
+		padding: 0 10px;
+	}
+}
+
 
 .banner__wrap {
 	padding-top: 80px;
@@ -13,6 +19,12 @@
 		margin-left: 60px;
 		margin-top: -20px;
 		box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
+
+		@include sm {
+			width: 250px;
+			margin: 10px auto;
+			display: block;
+		}
 	}
 }
 
@@ -22,6 +34,11 @@
 		font-size: 72px;
 		font-weight: 300;
 		color: $-text-black;
+
+		@include sm{
+			text-align: center;
+			font-size: 62px;
+		}
 	}
 
 	h1 {
@@ -29,6 +46,12 @@
 		font-size: 60px;
 		font-weight: 900;
 		color: $-text-black;
+		
+		@include sm{
+			text-align: center;
+			font-size: 50px;
+			margin: 5px 0;
+		}
 	}
 
 	h3 {
@@ -39,6 +62,12 @@
 		color: $-text-black;
 		position: relative;
 
+		@include sm {
+			font-size: 30px;
+			text-align: center;
+			background: $brand;
+		}
+
 		&::before {
 			position: absolute;
 			content: "";
@@ -48,6 +77,11 @@
 			height: 51px;
 			background: $brand;
 			z-index: -1;
+
+			@include sm{
+				display: none;
+			}
+
 		}
 	}
 }
