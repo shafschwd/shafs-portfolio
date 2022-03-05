@@ -10,7 +10,7 @@
 		padding: 100px 10px;
 	}
 
-	.about--main {
+	.about__text {
 		h4 {
 			font-family: $sans;
 			font-size: 60px;
@@ -19,6 +19,14 @@
 			padding-bottom: 20px;
 			
 			@include sm {
+				text-align: center;
+			}
+
+			@include md {
+				text-align: center;
+			}
+
+			@include lg {
 				text-align: center;
 			}
 		}
@@ -44,6 +52,13 @@
 				text-align: center;
 			}
 
+			@include lg{
+				font-size: 30px;
+				background: $brand;
+				padding: 5px 0;
+				text-align: center;
+			}
+
 
 			&::before {
 				position: absolute;
@@ -60,6 +75,13 @@
 				}
 				@include md{
 					display: none;
+				}
+				@include lg{
+					display: none;
+				}
+				@include xl {
+					width: 1000px;
+					left: -17px;
 				}
 			}
 		}
@@ -86,7 +108,18 @@
 				@include md {
 					padding-bottom: 30px;
 				}
+
+				@include lg {
+					padding-bottom: 30px;
+				}
 			}
 		}
 	}
+
+	.about__img{
+		@include xl{
+			margin-top: 20px;
+		}
+	}
 }
+

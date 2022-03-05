@@ -32,6 +32,16 @@
 			margin: 20px auto;
 			display: block;
 		}
+
+		@include lg {
+			width: 400px;
+			margin: 20px auto;
+			display: block;
+		}
+
+		@include xl {
+			margin-left: 14px;
+		}
 	}
 }
 
@@ -51,6 +61,11 @@
 			text-align: center;
 			font-size: 66px;
 		}
+
+		@include lg {
+			text-align: center;
+			font-size: 68px;
+		}
 	}
 
 	h1 {
@@ -68,6 +83,12 @@
 		@include md{
 			text-align: center;
 			font-size: 56px;
+			margin: 5px 0;
+		}
+
+		@include lg {
+			text-align: center;
+			font-size: 58px;
 			margin: 5px 0;
 		}
 	}
@@ -92,6 +113,12 @@
 			background: $brand;
 		}
 
+		@include lg {
+			font-size: 50px;
+			text-align: center;
+			background: $brand;
+		}
+
 		&::before {
 			position: absolute;
 			content: "";
@@ -110,6 +137,17 @@
 				display: none;
 			}
 
+			@include lg{
+				display: none;
+			}
+
+			@include lg{
+				display: none;
+			}
+
+			@include xl {
+				right: 6px;
+			}
 		}
 	}
 }

@@ -28,6 +28,12 @@
 		margin-top: 12px;
 	}
 
+	&__wrap{
+		@include lg {
+			margin-top: 16px;
+		}
+	}
+
 	&__list {
 		margin: 0 10px;
 
