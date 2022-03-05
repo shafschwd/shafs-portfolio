@@ -38,7 +38,11 @@
 			margin-right: 0;
 		}
 
-		@include sm{
+		@include sm {
+			margin: 10px 0;
+		}
+
+		@include md {
 			margin: 10px 0;
 		}
 	}
@@ -71,6 +75,10 @@
 		z-index: 1;
 
 		@include sm {
+			background-color: $brand;
+		}
+
+		@include md {
 			background-color: $brand;
 		}
 	}
@@ -115,17 +123,11 @@
 	box-shadow: 0 0 0 0;
 }
 
-// .offcanvas-header {
-// 	background: $body;
-// }
-
-// .offcanvas-body {
-// 	background: $body;
-// }
-
-// .btn-close{
-// 	display: none;
-// }
+@include md {
+	#theme-toggle-ofc {
+		margin-left: 240px;
+	}
+}
 
 @include sm {
 	#theme-toggle {
@@ -139,15 +141,14 @@
 	}
 }
 
-@include xl{
+@include xl {
 	#theme-toggle-ofc {
 		display: none;
 	}
 }
 
-@include xxl{
+@include xxl {
 	#theme-toggle-ofc {
 		display: none;
 	}
 }
-

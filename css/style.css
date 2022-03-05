@@ -53,7 +53,7 @@ ol {
 :root {
   --brand: hsl(133, 100%, 54%);
   --brand-light: hsl(133, 100%, 54%);
-  --brand-dark: hsl(133, 80%, 54%);
+  --brand-dark: hsl(155, 100%, 40%);
   --text:hsl(0, 0%, 19%);
   --text-black: hsl(0, 0%, 19%);
   --text-white: hsl(0, 6%, 100%);
@@ -502,6 +502,12 @@ body {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .menu__list {
+    margin: 10px 0;
+  }
+}
+
 .menu__item {
   padding: 7px 12px;
   font-size: 15px;
@@ -519,6 +525,12 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .menu__item {
+    background-color: var(--brand);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
   .menu__item {
     background-color: var(--brand);
   }
@@ -565,6 +577,12 @@ body {
   outline: 0;
   -webkit-box-shadow: 0 0 0 0;
           box-shadow: 0 0 0 0;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #theme-toggle-ofc {
+    margin-left: 240px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -617,6 +635,14 @@ body {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner__img img {
+    width: 350px;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
 .banner__text h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 72px;
@@ -631,6 +657,13 @@ body {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner__text h2 {
+    text-align: center;
+    font-size: 66px;
+  }
+}
+
 .banner__text h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 60px;
@@ -642,6 +675,14 @@ body {
   .banner__text h1 {
     text-align: center;
     font-size: 50px;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner__text h1 {
+    text-align: center;
+    font-size: 56px;
     margin: 5px 0;
   }
 }
@@ -663,6 +704,14 @@ body {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner__text h3 {
+    font-size: 40px;
+    text-align: center;
+    background: var(--brand);
+  }
+}
+
 .banner__text h3::before {
   position: absolute;
   content: "";
@@ -675,6 +724,12 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .banner__text h3::before {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
   .banner__text h3::before {
     display: none;
   }
@@ -698,12 +753,15 @@ body {
   margin-bottom: -1px;
 }
 
-.typed-cursor {
-  font-size: 50px;
-}
-
 #work .work-bg {
   padding: 150px 0 117px;
+}
+
+@media (max-width: 575.98px) {
+  #work .work-bg {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 #work .work-bg .work--heading h2 {
@@ -894,12 +952,21 @@ body {
 #about-me .about--main h5 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
   color: var(--text);
   position: relative;
 }
 
 @media (max-width: 575.98px) {
+  #about-me .about--main h5 {
+    font-size: 30px;
+    background: var(--brand);
+    padding: 5px 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
   #about-me .about--main h5 {
     font-size: 30px;
     background: var(--brand);
@@ -920,6 +987,12 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  #about-me .about--main h5::before {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
   #about-me .about--main h5::before {
     display: none;
   }
@@ -948,6 +1021,12 @@ body {
   #about-me .about--main p span {
     padding-bottom: 30px;
     text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #about-me .about--main p span {
+    padding-bottom: 30px;
   }
 }
 

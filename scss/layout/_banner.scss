@@ -25,6 +25,13 @@
 			margin: 10px auto;
 			display: block;
 		}
+
+		
+		@include md {
+			width: 350px;
+			margin: 20px auto;
+			display: block;
+		}
 	}
 }
 
@@ -39,6 +46,11 @@
 			text-align: center;
 			font-size: 62px;
 		}
+
+		@include md{
+			text-align: center;
+			font-size: 66px;
+		}
 	}
 
 	h1 {
@@ -50,6 +62,12 @@
 		@include sm{
 			text-align: center;
 			font-size: 50px;
+			margin: 5px 0;
+		}
+
+		@include md{
+			text-align: center;
+			font-size: 56px;
 			margin: 5px 0;
 		}
 	}
@@ -68,6 +86,12 @@
 			background: $brand;
 		}
 
+		@include md {
+			font-size: 40px;
+			text-align: center;
+			background: $brand;
+		}
+
 		&::before {
 			position: absolute;
 			content: "";
@@ -79,6 +103,10 @@
 			z-index: -1;
 
 			@include sm{
+				display: none;
+			}
+
+			@include md{
 				display: none;
 			}
 
@@ -107,6 +135,6 @@
 	}
 }
 
-.typed-cursor{
-    font-size: 50px;
-}
+// .typed-cursor{
+//     font-size: 50px;
+// }

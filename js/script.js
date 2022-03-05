@@ -49,7 +49,7 @@ $(function () {
 	
 	var typed = new Typed(".type-about", {
 		strings: ["of Bangladesh"],
-		loop: false,
+		loop: true,
 		typeSpeed: 40,
 		backSpeed: 40,
 		startDelay: 200,
@@ -58,7 +58,7 @@ $(function () {
 
 	// swiper
 	var swiper = new Swiper(".work-mySwiper", {
-		// freeMode: true,
+		freeMode: true,
 		slidesPerView: 3,
 		grid: {
 			rows: 2,

@@ -6,6 +6,11 @@
 	.work-bg {
 		padding: 150px 0 117px;
 
+		@include sm{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
 		.work--heading {
 			h2 {
 				font-family: $sans;
