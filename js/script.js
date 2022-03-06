@@ -46,10 +46,10 @@ $(function () {
 		showCursor: false,
 		// cursorChar: "💻",
 	});
-	
+
 	var typed = new Typed(".type-about", {
 		strings: ["of Bangladesh"],
-		loop: true,
+		loop: false,
 		typeSpeed: 40,
 		backSpeed: 40,
 		startDelay: 200,
@@ -81,24 +81,21 @@ $(function () {
 	//scroll js
 	ScrollReveal({
 		reset: true,
-		distance: '60px',
+		distance: "60px",
 		duration: 2500,
 		// delay: 400,
-	})
+	});
 
-	ScrollReveal().reveal('.sor-t', { delay: 200, origin: 'top'});
-	ScrollReveal().reveal('.sor-b', { delay: 200, origin: 'bottom'});
+	$('.navbar-collapse a').click(function(){
+		$(".navbar-collapse").collapse('hide');
+	});
+
+	ScrollReveal().reveal(".sor-t", { delay: 200, origin: "top" });
+	ScrollReveal().reveal(".sor-b", { delay: 200, origin: "bottom" });
 	// ScrollReveal().reveal('.sor-r', { delay: 200, origin: 'right'});
-	ScrollReveal().reveal('.sor-l', { delay: 200, origin: 'left'});
-	ScrollReveal().reveal('.icon i', { delay: 400, origin: 'top', interval: 200 });
+	ScrollReveal().reveal(".sor-l", { delay: 200, origin: "left" });
+	ScrollReveal().reveal(".icon i", { delay: 400, origin: "top", interval: 200 });
 
 	// logo anim
-	gsap.timeline()
-	.fromTo("#s1", { y: 10, opacity: 0}, {opacity: 1, y: 0, duration: 1})
-	.fromTo("#h", { y: -10, opacity: 0}, {opacity: 1, y: 0, duration: 1})
-	.fromTo("#a", { x: -10, opacity: 0}, {opacity: 1, x: 0, duration: 1})
-	.fromTo("#f", { x: 10, opacity: 0}, {opacity: 1, x: 0, duration: 1})
-	.fromTo("#s2", { opacity: 0}, {opacity: 1, rotation:360, duration: 1})
-	.fromTo("#bracket", { x: -53}, {x:0, ease: "linear", duration: 3.5}, 0)
-
+	gsap.timeline().fromTo("#s1", { y: 10, opacity: 0 }, { opacity: 1, y: 0, duration: 1 }).fromTo("#h", { y: -10, opacity: 0 }, { opacity: 1, y: 0, duration: 1 }).fromTo("#a", { x: -10, opacity: 0 }, { opacity: 1, x: 0, duration: 1 }).fromTo("#f", { x: 10, opacity: 0 }, { opacity: 1, x: 0, duration: 1 }).fromTo("#s2", { opacity: 0 }, { opacity: 1, rotation: 360, duration: 1 }).fromTo("#bracket", { x: -53 }, { x: 0, ease: "linear", duration: 3.5 }, 0);
 });

@@ -29,6 +29,14 @@
 	}
 
 	&__wrap{
+		@include sm {
+			background-color: $menu;
+		}
+
+		@include md {
+			background-color: $menu;
+		}
+
 		@include lg {
 			margin-top: 16px;
 		}
@@ -129,13 +137,25 @@
 	box-shadow: 0 0 0 0;
 }
 
+@include sm {
+	#theme-toggle-ofc {
+		margin-left: auto;
+	}
+}
+
 @include md {
 	#theme-toggle-ofc {
-		margin-left: 240px;
+		margin-left: auto;
 	}
 }
 
 @include sm {
+	#theme-toggle {
+		display: none;
+	}
+}
+
+@include md {
 	#theme-toggle {
 		display: none;
 	}
