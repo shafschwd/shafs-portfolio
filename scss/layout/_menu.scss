@@ -29,13 +29,15 @@
 	}
 
 	&__wrap{
-		@include sm {
-			background-color: $menu;
-		}
+		// @include sm {
+		// 	background-color: $-text-black;
+		// 	width: 100vw;
+		// 	height: 100vh;
+		// }
 
-		@include md {
-			background-color: $menu;
-		}
+		// @include md {
+		// 	background-color: $menu;
+		// }
 
 		@include lg {
 			margin-top: 16px;
